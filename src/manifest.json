@@ -1,0 +1,16 @@
+{
+	"manifest_version": 1,
+	"id": "7865647c-d7f9-40de-b95e-95a49d81c215",
+	"app_min_version": "3.3",
+	"version": "1.0.0",
+	"name": "RPG Dice Roller",
+	"description": "A Joplin plugin that lets you roll dice in your notes using commands or custom markdown. Based on rpg-dice-roller library.",
+	"author": "Sami Koivisto",
+	"homepage_url": "https://github.com/SamiKoiv/joplin-rpg-dice-roller",
+	"repository_url": "https://github.com/SamiKoiv/joplin-rpg-dice-roller",
+	"keywords": [],
+	"categories": [],
+	"screenshots": [],
+	"icons": {},
+	"promo_tile": {}
+}
