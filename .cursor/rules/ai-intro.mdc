@@ -1,0 +1,9 @@
+---
+description: Get quick introduction to what the project is about
+globs: 
+alwaysApply: false
+---
+- Read [project-plan.md](mdc:project-plan.md)
+- Read [ai-intro.md](mdc:ai-intro.md)
+
+- Check files under docs/tasks to see what we've been working on

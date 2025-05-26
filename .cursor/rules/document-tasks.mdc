@@ -1,0 +1,10 @@
+---
+description: Rules for documenting tasks
+globs: 
+---
+
+# Rules for documenting tasks
+
+- Document tasks under /docs/tasks
+- Use naming convention yyyy-mm-dd-todo.md (Check current day from console)
+- Use checkboxes to keep track of progress
