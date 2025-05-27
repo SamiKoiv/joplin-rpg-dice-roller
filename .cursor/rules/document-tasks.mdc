@@ -1,10 +1,12 @@
 ---
-description: Rules for documenting tasks
+description: 
 globs: 
+alwaysApply: true
 ---
 
 # Rules for documenting tasks
 
 - Document tasks under /docs/tasks
-- Use naming convention yyyy-mm-dd-todo.md (Check current day from console)
+- Use naming convention yyyy-mm-dd-my-working-item.md (Check current day from console)
 - Use checkboxes to keep track of progress
+- Update checkbox status as the task progresses
