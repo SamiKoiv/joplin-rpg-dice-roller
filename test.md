@@ -10,12 +10,21 @@ This page tests various dice roll configurations supported by the `[[dice:EXPRES
 - **3d8+4 (modifier):** [[dice:3d8+4]]
 - **1d4-1 (negative modifier):** [[dice:1d4-1]]
 
+## Custom Labels
+
+- **Simple Label:** [[dice(My D20 Roll):d20]]
+- **Label with Spaces:** [[dice(Attack with Longsword):1d20+7]]
+- **Label for Basic Sum:** [[dice(HP Recovery):2d8+2]]
+- **Label for Complex Expression:** [[dice(Advantage Fireball):2d20kh1!+8d6!]]
+
 ## Keep Highest/Lowest
 
 - **4d6kh3 (Keep Highest 3 of 4d6):** [[dice:4d6kh3]]
 - **4d6kl3 (Keep Lowest 3 of 4d6):** [[dice:4d6kl3]]
 - **2d20kh1 (Advantage - Keep Highest 1 of 2d20):** [[dice:2d20kh1]]
+- **With Custom Label:** [[dice(Advantage Roll):2d20kh1]]
 - **2d20kl1 (Disadvantage - Keep Lowest 1 of 2d20):** [[dice:2d20kl1]]
+- **With Custom Label:** [[dice(Disadvantage Roll):2d20kl1]]
 
 ## Drop Highest/Lowest
 

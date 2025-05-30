@@ -1,5 +1,5 @@
 function diceMarkdownItPlugin(md) {
-  const anchoredDiceRegex = /^\[\[dice:([^\]]+)\]\]/;
+  const anchoredDiceRegex = /^\[\[dice(?:\(([^)]+)\))?:([^\]]+)\]\]/;
   let styleInjected = false;
 
   md.inline.ruler.before('link', 'dice', (state, silent) => {
@@ -10,6 +10,9 @@ function diceMarkdownItPlugin(md) {
 
     const match = anchoredDiceRegex.exec(state.src.slice(state.pos));
     if (!match) return false;
+
+    const customText = match[1];
+    const diceExpression = match[2];
 
     if (!silent) {
       if (!styleInjected) {
@@ -35,12 +38,12 @@ function diceMarkdownItPlugin(md) {
       const openToken = state.push('dice_open', 'button', 1);
       openToken.attrs = [
         ['class', 'dice-btn'],
-        ['data-exp', match[1]],
-        ['title', match[1]]
+        ['data-exp', diceExpression],
+        ['title', diceExpression]
       ];
       
       const textToken = state.push('text', '', 0);
-      textToken.content = `🎲 ${match[1]}`;
+      textToken.content = `🎲 ${customText || diceExpression}`;
       
       state.push('dice_close', 'button', -1);
     }
