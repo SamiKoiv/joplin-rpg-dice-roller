@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dist": "webpack --env joplin-plugin-config=buildMain && webpack --env joplin-plugin-config=buildExtraScripts && webpack --env joplin-plugin-config=createArchive",
+    "dev": "nodemon --watch src --ext ts,tsx,js,json --exec \"npm run dist\"",
     "prepare": "npm run dist",
     "updateVersion": "webpack --env joplin-plugin-config=updateVersion",
     "update": "npm install -g generator-joplin && yo joplin --node-package-manager npm --update --force"
@@ -20,6 +21,7 @@
     "copy-webpack-plugin": "^11.0.0",
     "fs-extra": "^10.1.0",
     "glob": "^8.0.3",
+    "nodemon": "^3.1.10",
     "tar": "^6.1.11",
     "ts-loader": "^9.3.1",
     "typescript": "^4.8.2",
