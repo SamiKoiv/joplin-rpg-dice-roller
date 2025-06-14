@@ -40,7 +40,8 @@ function diceMarkdownItPlugin(md) {
       openToken.attrs = [
         ['class', 'dice-btn'],
         ['data-exp', diceExpression],
-        ['title', diceExpression]
+        ['title', diceExpression],
+        ['data-original-text', customText || diceExpression]
       ];
       
       const textToken = state.push('text', '', 0);
