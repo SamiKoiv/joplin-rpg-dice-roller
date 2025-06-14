@@ -19,6 +19,7 @@ function diceMarkdownItPlugin(md) {
         state.tokens.push(Object.assign(new state.Token('html_inline', '', 0), {
           content: `<style>
             .dice-btn {
+              font-family: monospace;
               font-size: 1.0em;
               border-radius: 3px;
               border: 1px solid #888;
